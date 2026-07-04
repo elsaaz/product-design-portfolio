@@ -1,0 +1,613 @@
+/* ========================================
+   PORTFOLIO - ANIMATION STYLESHEET
+   Advanced Animations & Micro-interactions
+   ======================================== */
+
+/* ========================================
+   KEYFRAME ANIMATIONS
+   ======================================== */
+
+/* Fade animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Slide animations */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Scale animations */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* Rotate animations */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateReverse {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/* Pulse animations */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes pulseShadow {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(246, 202, 217, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(246, 202, 217, 0);
+    }
+}
+
+/* Bounce animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Glow animations */
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(246, 202, 217, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(246, 202, 217, 0.8);
+    }
+}
+
+/* Wave animation */
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+/* Float animation */
+@keyframes floatSmooth {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Gradient shift */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Text reveal */
+@keyframes textReveal {
+    0% {
+        opacity: 0;
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/* Underline animation */
+@keyframes underlineReveal {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Parallax effect */
+@keyframes parallax {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+/* ========================================
+   COMPONENT ANIMATIONS
+   ======================================== */
+
+/* Hero section animations */
+.hero-title {
+    animation: slideInUp 0.8s ease-out;
+}
+
+.hero-subtitle {
+    animation: slideInUp 0.8s ease-out 0.1s both;
+}
+
+.hero-buttons {
+    animation: slideInUp 0.8s ease-out 0.2s both;
+}
+
+.hero-image-wrapper {
+    animation: slideInRight 0.8s ease-out 0.3s both;
+}
+
+/* Button animations */
+.button {
+    position: relative;
+    overflow: hidden;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.button:active::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Card hover effects */
+.project-card {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.about-card {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.skill-category {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.process-step {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Image zoom on hover */
+.project-image img {
+    animation: none;
+    transform-origin: center;
+}
+
+.project-card:hover .project-image img {
+    animation: scaleUp 0.4s ease-out forwards;
+}
+
+/* Process timeline animations */
+.process-step {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.process-step:nth-child(1) {
+    animation: slideInLeft 0.6s ease-out 0s both;
+}
+
+.process-step:nth-child(3) {
+    animation: slideInUp 0.6s ease-out 0.1s both;
+}
+
+.process-step:nth-child(5) {
+    animation: slideInRight 0.6s ease-out 0.2s both;
+}
+
+/* Skill chips stagger animation */
+.skill-chip {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.skill-chip:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.skill-chip:nth-child(2) {
+    animation-delay: 0.05s;
+}
+
+.skill-chip:nth-child(3) {
+    animation-delay: 0.1s;
+}
+
+.skill-chip:nth-child(4) {
+    animation-delay: 0.15s;
+}
+
+.skill-chip:nth-child(5) {
+    animation-delay: 0.2s;
+}
+
+.skill-chip:nth-child(6) {
+    animation-delay: 0.25s;
+}
+
+/* ========================================
+   SCROLL TRIGGERED ANIMATIONS
+   ======================================== */
+
+/* Intersection Observer will add 'visible' class */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.animate-on-scroll.visible {
+    animation: slideInUp 0.6s ease-out forwards;
+}
+
+/* Stagger animations for grid items */
+.about-grid .about-card:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.about-grid .about-card:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.about-grid .about-card:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.about-grid .about-card:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+.about-grid .about-card:nth-child(5) {
+    transition-delay: 0.4s;
+}
+
+/* Projects grid stagger */
+.projects-grid .project-card:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.projects-grid .project-card:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.projects-grid .project-card:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.projects-grid .project-card:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+/* ========================================
+   LOADING & SKELETON ANIMATIONS
+   ======================================== */
+
+.skeleton {
+    background: linear-gradient(
+        90deg,
+        var(--color-border) 25%,
+        var(--color-card) 50%,
+        var(--color-border) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+}
+
+/* ========================================
+   HOVER EFFECTS
+   ======================================== */
+
+/* Link hover effect */
+a:not(.button):not(.nav-link):hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* Nav link underline animation */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-primary);
+    transition: width 0.3s ease-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* ========================================
+   PAGE TRANSITIONS
+   ======================================== */
+
+/* Smooth page load */
+body {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* ========================================
+   SCROLL PROGRESS BAR
+   ======================================== */
+
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    width: 0;
+    z-index: var(--z-fixed);
+    animation: none;
+}
+
+.scroll-progress.active {
+    animation: none;
+    transition: width 0.2s ease-out;
+}
+
+/* ========================================
+   TEXT ANIMATIONS
+   ======================================== */
+
+/* Typing effect */
+.typing {
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--color-primary);
+    }
+}
+
+/* ========================================
+   BACKDROP ANIMATIONS
+   ======================================== */
+
+.modal-overlay {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+    animation: slideInUp 0.4s ease-out;
+}
+
+/* ========================================
+   PERFORMANCE OPTIMIZATIONS
+   ======================================== */
+
+/* Hardware acceleration */
+.blob,
+.project-card,
+.about-card,
+.button {
+    will-change: transform, box-shadow;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .blob {
+        animation: none !important;
+    }
+    
+    .scroll-indicator {
+        animation: none !important;
+    }
+    
+    .button::before {
+        animation: none !important;
+    }
+}
+
+/* ========================================
+   RESPONSIVE ANIMATIONS
+   ======================================== */
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+        animation-delay: 0.1s;
+    }
+    
+    .hero-image-wrapper {
+        animation: slideInUp 0.8s ease-out 0.3s both;
+    }
+    
+    .blob {
+        opacity: 0.15;
+        filter: blur(30px);
+    }
+}
+
+/* ========================================
+   DARK MODE ANIMATIONS
+   ======================================== */
+
+/* Support for dark mode if needed */
+@media (prefers-color-scheme: dark) {
+    .cursor-glow {
+        background: radial-gradient(circle, rgba(246, 202, 217, 0.3) 0%, transparent 70%);
+    }
+}
