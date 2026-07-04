@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elsa Diaz - Product Designer. Specializing in UX design, product design, and digital experiences.">
+    <meta name="keywords" content="product designer, UX designer, UI design, portfolio">
+    <meta name="author" content="Elsa Diaz">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elsaaz.com">
+    <meta property="og:title" content="Elsa Diaz - Product Designer">
+    <meta property="og:description" content="Product Designer specializing in UX, creating beautiful and intuitive digital experiences.">
+    <meta property="og:image" content="https://elsaaz.com/assets/images/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Elsa Diaz - Product Designer">
+    <meta name="twitter:description" content="Product Designer specializing in UX, creating beautiful and intuitive digital experiences.">
+    <meta name="twitter:image" content="https://elsaaz.com/assets/images/twitter-image.png">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://elsaaz.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preload" href="assets/fonts/sora-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/inter-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/plus-jakarta-sans-medium.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <title>Elsa Diaz - Product Designer | UX Design Portfolio</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Elsa Diaz",
+        "jobTitle": "Product Designer",
+        "url": "https://elsaaz.com",
+        "sameAs": [
+            "https://www.linkedin.com/in/elsadiazyamila/",
+            "https://www.behance.net/elsadiaz7",
+            "https://dribbble.com/elsaaz-co"
+        ],
+        "image": "https://elsaaz.com/assets/images/portrait.jpg",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip to Main Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Main navigation" role="navigation">
+        <div class="navbar-container">
+            <a href="/" class="logo" aria-label="Elsa Diaz - Product Designer">
+                <span class="logo-text">Elsa</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#process" class="nav-link">Process</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="hero" role="region" aria-label="Hero section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="text-gradient">Designing</span>
+                            <br>
+                            <span class="text-highlight">human-centered</span>
+                            <br>
+                            digital experiences
+                        </h1>
+                        <p class="hero-subtitle">
+                            Hi! I'm Elsa, a Product Designer from Indonesia. I create intuitive, beautiful interfaces that solve real problems and delight users.
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <a href="#projects" class="button button-primary" aria-label="View my projects">
+                                View Projects
+                            </a>
+                            <a href="https://drive.google.com/file/d/1H3OaDOSpxQEQfqVSQIZ5W6ZnkIfrlHqh/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="button button-secondary" aria-label="Download resume in new window">
+                                Download Resume
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <div class="hero-image-wrapper">
+                            <img src="assets/images/portrait.jpg" alt="Elsa Diaz - Product Designer" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Floating Blobs -->
+                <div class="blob blob-1" aria-hidden="true"></div>
+                <div class="blob blob-2" aria-hidden="true"></div>
+                <div class="blob blob-3" aria-hidden="true"></div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="scroll-dot"></div>
+                <p>Scroll to explore</p>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section class="about" id="about" role="region" aria-label="About section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                
+                <div class="about-grid">
+                    <div class="about-card animate-on-scroll">
+                        <div class="about-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>Indonesia</p>
+                    </div>
+                    
+                    <div class="about-card animate-on-scroll">
+                        <div class="about-icon">🎨</div>
+                        <h3>Role</h3>
+                        <p>Product Designer</p>
+                    </div>
+                    
+                    <div class="about-card animate-on-scroll">
+                        <div class="about-icon">🔍</div>
+                        <h3>Mindset</h3>
+                        <p>Problem Solver</p>
+                    </div>
+                    
+                    <div class="about-card animate-on-scroll">
+                        <div class="about-icon">💭</div>
+                        <h3>Approach</h3>
+                        <p>UX Thinker</p>
+                    </div>
+                    
+                    <div class="about-card animate-on-scroll">
+                        <div class="about-icon">✨</div>
+                        <h3>Passion</h3>
+                        <p>Creative Explorer</p>
+                    </div>
+                </div>
+                
+                <div class="about-text animate-on-scroll">
+                    <p>
+                        With over 5 years of experience in product design, I've worked with startups and established tech companies to create intuitive, beautiful digital experiences. My approach combines user research, strategic thinking, and creative execution to solve complex problems.
+                    </p>
+                    <p>
+                        I believe great design is invisible—it feels natural and delightful. Every pixel, every interaction, and every transition is intentional. I'm passionate about creating products that don't just look beautiful, but truly resonate with users.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Projects Section -->
+        <section class="featured-projects" id="projects" role="region" aria-label="Featured projects section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card animate-on-scroll">
+                        <a href="projects/silent-drop-off.html" class="project-card-link">
+                            <div class="project-image">
+                                <img src="assets/images/projects/silent-drop-off.jpg" alt="Silent Drop-Off - UX Case Study" loading="lazy">
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">UX Case Study</span>
+                                <h3 class="project-title">Silent Drop-Off</h3>
+                                <p class="project-description">Reducing Commuter Anxiety Through UX</p>
+                                <div class="project-meta">
+                                    <span class="meta-item">Duration: 8 weeks</span>
+                                    <span class="meta-item">Tools: Figma, Figma</span>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag">UX Research</span>
+                                    <span class="tag">Wireframing</span>
+                                    <span class="tag">Mobile App</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <!-- Project 2 -->
+                    <article class="project-card animate-on-scroll">
+                        <a href="projects/ewallet-error.html" class="project-card-link">
+                            <div class="project-image">
+                                <img src="assets/images/projects/ewallet-error.jpg" alt="E-Wallet Error - Error Recovery UX" loading="lazy">
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">UI/UX Design</span>
+                                <h3 class="project-title">E-Wallet Error Recovery</h3>
+                                <p class="project-description">Error Recovery UX</p>
+                                <div class="project-meta">
+                                    <span class="meta-item">Duration: 4 weeks</span>
+                                    <span class="meta-item">Tools: Figma, FigJam</span>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag">Error States</span>
+                                    <span class="tag">User Flow</span>
+                                    <span class="tag">Financial App</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <!-- Project 3 -->
+                    <article class="project-card animate-on-scroll">
+                        <a href="projects/faeltwist.html" class="project-card-link">
+                            <div class="project-image">
+                                <img src="assets/images/projects/faeltwist.jpg" alt="FaelTwist - Landing Page Design" loading="lazy">
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">Web Design</span>
+                                <h3 class="project-title">FaelTwist</h3>
+                                <p class="project-description">Landing Page Design</p>
+                                <div class="project-meta">
+                                    <span class="meta-item">Duration: 6 weeks</span>
+                                    <span class="meta-item">Tools: Figma, Adobe XD</span>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag">Landing Page</span>
+                                    <span class="tag">Web Design</span>
+                                    <span class="tag">Conversion Focused</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <!-- Project 4 -->
+                    <article class="project-card animate-on-scroll">
+                        <a href="projects/indrive.html" class="project-card-link">
+                            <div class="project-image">
+                                <img src="assets/images/projects/indrive.jpg" alt="InDrive Redesign - End-to-end Product Design" loading="lazy">
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">Product Design</span>
+                                <h3 class="project-title">InDrive Redesign</h3>
+                                <p class="project-description">End-to-end Product Design</p>
+                                <div class="project-meta">
+                                    <span class="meta-item">Duration: 12 weeks</span>
+                                    <span class="meta-item">Tools: Figma, Protopie</span>
+                                </div>
+                                <div class="project-tags">
+                                    <span class="tag">Full Design</span>
+                                    <span class="tag">Research</span>
+                                    <span class="tag">Mobility App</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Design Process Section -->
+        <section class="design-process" id="process" role="region" aria-label="Design process section">
+            <div class="container">
+                <h2 class="section-title">My Design Process</h2>
+                
+                <div class="process-timeline animate-on-scroll">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <h3>Research</h3>
+                        <p>Deep dive into user needs, pain points, and behaviors</p>
+                    </div>
+                    
+                    <div class="process-arrow" aria-hidden="true">↓</div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <h3>Define</h3>
+                        <p>Synthesize insights and define the core problem</p>
+                    </div>
+                    
+                    <div class="process-arrow" aria-hidden="true">↓</div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <h3>Ideate</h3>
+                        <p>Brainstorm solutions and explore possibilities</p>
+                    </div>
+                    
+                    <div class="process-arrow" aria-hidden="true">↓</div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <h3>Prototype</h3>
+                        <p>Create interactive prototypes for testing</p>
+                    </div>
+                    
+                    <div class="process-arrow" aria-hidden="true">↓</div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">05</div>
+                        <h3>Validate</h3>
+                        <p>Test with users and gather feedback</p>
+                    </div>
+                    
+                    <div class="process-arrow" aria-hidden="true">↓</div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">06</div>
+                        <h3>Iterate</h3>
+                        <p>Refine and improve based on feedback</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section class="skills" id="skills" role="region" aria-label="Skills section">
+            <div class="container">
+                <h2 class="section-title">Skills & Tools</h2>
+                
+                <div class="skills-grid animate-on-scroll">
+                    <div class="skill-category">
+                        <h3>Design Tools</h3>
+                        <div class="skill-chips">
+                            <span class="skill-chip">Figma</span>
+                            <span class="skill-chip">FigJam</span>
+                            <span class="skill-chip">Adobe XD</span>
+                            <span class="skill-chip">Adobe Creative Suite</span>
+                            <span class="skill-chip">Protopie</span>
+                            <span class="skill-chip">InVision</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Methodologies</h3>
+                        <div class="skill-chips">
+                            <span class="skill-chip">UX Research</span>
+                            <span class="skill-chip">User Testing</span>
+                            <span class="skill-chip">Wireframing</span>
+                            <span class="skill-chip">Prototyping</span>
+                            <span class="skill-chip">Information Architecture</span>
+                            <span class="skill-chip">Journey Mapping</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Specializations</h3>
+                        <div class="skill-chips">
+                            <span class="skill-chip">Product Design</span>
+                            <span class="skill-chip">Mobile App Design</span>
+                            <span class="skill-chip">Web Design</span>
+                            <span class="skill-chip">UI Design</span>
+                            <span class="skill-chip">Design Systems</span>
+                            <span class="skill-chip">Animation</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Other</h3>
+                        <div class="skill-chips">
+                            <span class="skill-chip">AI Tools</span>
+                            <span class="skill-chip">Accessibility</span>
+                            <span class="skill-chip">Motion Design</span>
+                            <span class="skill-chip">Visual Design</span>
+                            <span class="skill-chip">Communication</span>
+                            <span class="skill-chip">Leadership</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="contact" id="contact" role="region" aria-label="Contact section">
+            <div class="container">
+                <div class="contact-card animate-on-scroll">
+                    <h2 class="contact-title">Let's Work Together</h2>
+                    <p class="contact-subtitle">
+                        I'm always interested in hearing about new projects and opportunities. Whether you need a designer for your next product or want to discuss design trends, let's connect!
+                    </p>
+                    
+                    <div class="contact-links">
+                        <a href="mailto:hello@elsaaz.com" class="contact-link" aria-label="Send email to hello@elsaaz.com">
+                            <span class="link-icon">✉</span>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/elsadiazyamila/" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Visit LinkedIn profile in new window">
+                            <span class="link-icon">in</span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.behance.net/elsadiaz7" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Visit Behance profile in new window">
+                            <span class="link-icon">Ⓑ</span>
+                            <span>Behance</span>
+                        </a>
+                        <a href="https://dribbble.com/elsaaz-co" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Visit Dribbble profile in new window">
+                            <span class="link-icon">🏀</span>
+                            <span>Dribbble</span>
+                        </a>
+                    </div>
+                    
+                    <a href="https://drive.google.com/file/d/1H3OaDOSpxQEQfqVSQIZ5W6ZnkIfrlHqh/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="button button-primary button-large" aria-label="Download resume in new window">
+                        Get My Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p class="footer-text">Designed with <span aria-label="love">💕</span> by Elsa Diaz</p>
+            <p class="footer-year"><span id="current-year"></span> © All rights reserved</p>
+        </div>
+    </footer>
+    
+    <!-- Cursor Glow (decorative) -->
+    <div class="cursor-glow" aria-hidden="true"></div>
+    
+    <!-- Scripts -->
+    <script src="assets/js/project-data.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/cursor.js"></script>
+</body>
+</html>
